@@ -67,7 +67,7 @@ function getListOfAllLowerWeights2(w) {
                 if (wx == 0) {
                     // found solution
                     //console.log('found solution', path);
-                    sol.push(JSON.stringify(path));
+                    sol.push({path: JSON.stringify(path), len : path.length});
                     path.pop();
                     //break;
                 }
@@ -94,4 +94,4 @@ function getListOfAllLowerWeights2(w) {
     bt(w);
     done();
 
-})(17);
+})(80);
